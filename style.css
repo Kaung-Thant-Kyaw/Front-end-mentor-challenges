@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  /* Primary Color */
+  --green: hsl(75, 94%, 57%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  /* Font size */
+  --font-size-paragraph: 14px;
+  /* Font family */
+  --font-family: "Inter";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--off-black);
+  font-size: 0.875rem;
+}
+
+.container {
+  background-color: var(--dark-grey);
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+figure img {
+  margin-bottom: 1rem;
+  width: 75px;
+  height: 75px;
+  border-radius: 38px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+}
+
+.location {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.job {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.social-btns {
+  width: 100%;
+}
+
+.btns-list {
+  display: grid;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.btns-list li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li a {
+  text-decoration: none;
+  background-color: var(--grey);
+  color: var(--white);
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+li a:hover {
+  background-color: var(--green);
+  color: var(--off-black);
+  font-weight: 600;
+}
+
+.attribution {
+  text-align: center;
+  color: var(--white);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--green);
+}
